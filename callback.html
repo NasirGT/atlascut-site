@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AtlasCut Uploader</title>
+<style>body{font-family:system-ui,Segoe UI,Arial,sans-serif;max-width:640px;margin:60px auto;padding:0 16px;text-align:center;color:#1b1d26;background:#fafafa}code{display:block;word-break:break-all;background:#fff;border:1px solid #ddd;padding:12px;margin:16px 0}</style></head><body>
+<h1>AtlasCut Uploader</h1><p id="msg">Connecting…</p><code id="c"></code>
+<script>
+var q=new URLSearchParams(location.search),c=q.get('code'),e=q.get('error');
+document.getElementById('msg').textContent=c?'TikTok connected. Copy this code back into the uploader:':(e?'TikTok returned: '+e:'No code in this link.');
+document.getElementById('c').textContent=c||'';
+</script></body></html>
